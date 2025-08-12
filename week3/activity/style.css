@@ -1,0 +1,67 @@
+h1{
+    text-align: end;
+}
+h2{
+    text-align: center;
+}
+.head1{
+    color: white;
+}
+.head2{
+    color: red;
+}
+.head3{
+    color: white;
+    background-color: black;
+    ;
+    font-family: Arial;
+    font-size: 25px;
+}
+.head4{
+    color: rgb(9, 235, 9)
+}
+.u3{
+    color: yellow;
+    
+}
+.u1{
+    color: red;
+}
+.u2{
+    color: yellow;
+    text-underline-position: under;
+}
+.secpar3{
+    color: blue;
+}
+.secpar4{
+    color: rgb(4, 245, 4)
+}
+.secpar5{
+    color:blue;
+}
+.secpar6{
+    color: red
+}
+.secpar7{
+    background-color: rgb(0, 255, 0);
+    font-family: Arial;
+}
+.secpar8{
+    background-color: black;
+    color: white;
+}
+.secpar9{
+    background-color: red;
+    color: white;
+}
+body{
+    background-color: #16365d;
+
+}
+.par1{
+    color: red;
+}
+.par2{
+    color: indigo;
+}

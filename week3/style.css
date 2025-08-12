@@ -1,0 +1,60 @@
+h1{
+    color: rgb(70, 3, 3);
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color:rgb(119, 11, 20);
+    
+}
+h2{
+    color: rgb(70, 3, 3);
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color:rgb(119, 11, 20);
+    
+}
+.head1{
+    border: dashed 10px black;
+    color: blue;
+    background-color: rosybrown;
+
+    
+    
+}
+.head2{
+    border: dashed 10px rgb(119, 11, 20);
+}
+p{
+
+    color: rgb(134, 132, 132);
+    font-size: 30px;
+    background-color: aliceblue;
+    border: 10px solid rgb(116, 112, 112);
+}
+body{
+    background-image: url("images/oasis.jpg");
+    background-size: cover;
+}
+
+.par1 {
+    color: BLUE;
+}
+.par2 {
+    color: RED;
+}
+.par3 {
+    color: GREEN;
+}
+.par4 {
+    color: rgb(66, 66, 3);
+}
+.par5 {
+    color: ORANGE;
+}
+.par6 {
+    color: PURPLE;
+}
+.par7 {
+    color: PINK;
+}

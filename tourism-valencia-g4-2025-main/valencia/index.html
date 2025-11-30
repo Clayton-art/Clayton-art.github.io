@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <section class="size">
+    <section class="home position-relative">
+
+    <div class="hero">
+        <img src="images/header.svg" class="header-image" alt="header">
+    </div>
+
+    <div id="carouselExample" class="carousel slide position-relative">
+        <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                <img src="images/slides/slide1.jpg" class="d-block w-100" alt="slide1">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Discover the calm at the heart of Valencia — where fresh air, open spaces, and simple moments welcome you home.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/slides/slide2.jpg" class="d-block w-100" alt="slide2">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>A place where nature meets community, and every step feels like a breath of peace.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/slides/slide3.jpg" class="d-block w-100" alt="slide3">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Your gateway to cool weather, green landscapes, and unforgettable experiences.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/slides/slide4.jpg" class="d-block w-100" alt="slide4">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Discover the charm of Valencia’s parks and the warmth of its community.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/slides/slide5.jpg" class="d-block w-100" alt="slide5">
+                <div class="carousel-caption d-none d-md-block fw-bold fs-4">
+                    <p>Explore the stunning landscapes and natural beauty.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+    <section id="about" class="about py-5">
+        <div class="container">
+            <h2>About Valencia</h2>
+            <p class="lead">Nestled in the heart of Negros Oriental, Valencia is a charming town that offers the perfect blend of nature, culture, and adventure. Known for its lush landscapes, rolling hills, and cool climate, Valencia is a haven for travelers looking to escape the hustle and bustle of city life.</p>
+
+            <p class="lead">This town is a gateway to some of Negros Oriental’s most scenic spots, from pristine rivers and waterfalls to hidden mountain trails. Valencia’s rich history and warm, welcoming community add a cultural depth to every visit, making it not just a destination, but an experience.</p>
+
+            <p class="lead">Whether you’re seeking outdoor adventures, cultural immersion, or simply a peaceful retreat surrounded by nature, Valencia promises an unforgettable journey for every traveler.</p>
+        </div>
+    </section>
+
+    <section id="attractions" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Attractions</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 clickable" role="button" data-bs-toggle="modal" data-bs-target="#attractionModal1">
+                        <div class="d-flex flex-column align-items-center p-3">
+                                <img src="images/attractions/plaza.jpg" alt="plaza" class="img-fluid mb-1" style="max-height:200px; object-fit:cover; width:100%;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Valencia Plaza</h5>
+                            <p class="card-text">The heart of the town, perfect for relaxing, people-watching, and enjoying local life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 clickable" role="button" data-bs-toggle="modal" data-bs-target="#attractionModal2">
+                        <div class="d-flex flex-column align-items-center p-3">
+                                <img src="images/attractions/theBarn.jpg" alt="theBarn" class="img-fluid mb-1" style="max-height:200px; object-fit:cover; width:100%;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Barn</h5>
+                            <p class="card-text">Get up close with playful monkeys in their natural habitat for a fun, family-friendly adventure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 clickable" role="button" data-bs-toggle="modal" data-bs-target="#attractionModal3">
+                        <div class="d-flex flex-column align-items-center p-3">
+                                <img src="images/attractions/monkeySanctuary.jpg" alt="monkeySanctuary" class="img-fluid mb-1" style="max-height:160px; object-fit:cover; width:100%;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Monkey Sanctuary</h5>
+                            <p class="card-text">A rustic spot blending nature and charm, ideal for photos, gatherings, and peaceful strolls.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 clickable" role="button" data-bs-toggle="modal" data-bs-target="#attractionModal4">
+                        <div class="d-flex flex-column align-items-center p-3">
+                                <img src="images/attractions/sulfurVents.jpg" alt="sulfurVents" class="img-fluid mb-1" style="max-height:200px; object-fit:cover; width:100%;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sulfur Vents</h5>
+                            <p class="card-text">Marvel at the unique geothermal wonder, where steaming vents create a dramatic and unforgettable landscape.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modals-container">
+        <div class="modal fade" id="attractionModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Valencia Plaza — Photos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="attractionCarousel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/attractions/plaza/plaza1.jpg" class="d-block w-100" alt="plaza1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/plaza/plaza2.jpg" class="d-block w-100" alt="plaza2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/plaza/plaza3.jpg" class="d-block w-100" alt="plaza3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#attractionCarousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#attractionCarousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="attractionModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">The Barn — Photos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="attractionCarousel2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/attractions/theBarn/theBarn1.jpg" class="d-block w-100" alt="theBarn1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/theBarn/theBarn2.jpg" class="d-block w-100" alt="theBarn2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/theBarn/theBarn3.jpg" class="d-block w-100" alt="theBarn3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#attractionCarousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#attractionCarousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="attractionModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Monkey Sanctuary — Photos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="attractionCarousel3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/attractions/monkeySanctuary/monkeySanctuary1.jpg" class="d-block w-100" alt="monkeySanctuary1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/monkeySanctuary/monkeySanctuary2.jpg" class="d-block w-100" alt="monkeySanctuary2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/monkeySanctuary/monkeySancuary3.jpg" class="d-block w-100" alt="monkeySancuary3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#attractionCarousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#attractionCarousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="attractionModal4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sulfur Vents — Photos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="attractionCarousel4" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/attractions/sulfutVents/sulfurVents1.jpg" class="d-block w-100" alt="sulfurVents1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/sulfutVents/sulfurVents2.jpg" class="d-block w-100" alt="sulfurVents2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/attractions/sulfutVents/sulfurVents3.jpg" class="d-block w-100" alt="sulfurVents3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#attractionCarousel4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#attractionCarousel4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="food" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h2>Food</h2>
+                    <p class="text-muted">Unique food offerings of Valencia, where traditional flavors and local favorites come together.</p>
+
+                    <div class="list-group">
+                        <div class="card mb-3 food-card">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4">
+                                    <img src="images/foods/valechon.jpg" class="img-fluid rounded-start" alt="valechon">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Valechon</h5>
+                                        <p class="card-text">Valencia’s signature twist on the classic lechon—crisp, flavorful, and slow-roasted to perfection. Valechon is known for its juicy meat, perfectly seasoned skin, and rich aroma that draws locals and visitors alike.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 food-card">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4">
+                                    <img src="images/foods/pungkoPungko.png" class="img-fluid rounded-start" alt="pungkoPungko">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pungko Pungko</h5>
+                                        <p class="card-text">A fun and budget-friendly street-food experience where you sit on low stools and enjoy a spread of fried favorites—lumpia, pork, chicken, eggs, and more. Simple, tasty, and very local, it’s a must-try food stop for anyone craving authentic Valencia flavors in a casual setting.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 food-card">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-4">
+                                    <img src="images/foods/ihawIhaw.jpg" class="img-fluid rounded-start" alt="ihawIhaw">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ihaw-Ihaw</h5>
+                                        <p class="card-text">A classic Filipino grilling experience featuring skewered meats, seafood, and local favorites cooked over hot charcoal. Smoky, savory, and best enjoyed with friends—this is Valencia’s go-to street food for a flavorful night out.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2>Accommodations</h2>
+                    <p class="text-muted">Stay close to nature! Valencia offers charming accommodations where comfort, calm, and cool weather come together.</p>
+
+                    <div class="row">
+                        <div class="col-sm-12 mb-3">
+                            <div class="card accom-card">
+                                <img src="images/accommodations/asriVilla.jpg" class="card-img-top" alt="asriVilla">
+                                <div class="card-body">
+                                    <h5 class="card-title">ASRI Villas</h5>
+                                    <p class="card-text">Offers spacious rooms (villas), free Wi-Fi, garden surroundings, and conveniences like kitchenette, minibar, air conditioning — a good mix of comfort and nature.</p>
+                                    <a href="#contact" class="btn btn-primary mt-3" aria-label="Reserve ASRI Villas">Reserve Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mb-3">
+                            <div class="card accom-card">
+                                <img src="images/accommodations/tejero.jpg" class="card-img-top" alt="tejero">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tejero Highland Resort & Adventure Park</h5>
+                                    <p class="card-text">A resort + adventure park combo — great for travelers who want both lodging and activities like zipline, ATV rides, natural pools, and more..</p>
+                                    <a href="#contact" class="btn btn-primary mt-3" aria-label="Reserve Tejero Highland Resort">Reserve Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <h2>Events & Festivals</h2>
+            <p class="text-muted">Placeholder: seasonal events, festivals, and local gatherings. Click an image for details.</p>
+
+            <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                    <div class="card event-card">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-7">
+                                <div style="height:420px;">
+                                    <iframe src="https://www.youtube.com/embed/vbea8tmuDi8" title="Rambones Festival video" style="width:100%; height:100%; border:0;" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rambones Festival</h5>
+                                    <p class="card-text">The Rambones Festival is celebrated every November and highlights Valencia’s vibrant agricultural heritage, especially its famous rambutan and lansones. The festival features colorful street dancing, lively cultural performances, and a dramatized story of two mythical tribes, making it one of the town’s most energetic and visually stunning celebrations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card event-card">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <img src="images/chadaValencia.png" class="img-fluid h-100 rounded-start" alt="chadaValencia" style="object-fit:cover;">
+                            </div>
+                            <div class="col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chada Valencia Festival</h5>
+                                    <p class="card-text">Held every May, the Chada Valencia Festival showcases the town’s culture, talents, products, and traditions. Throughout the month, locals and visitors enjoy a variety of events such as trade fairs, garden shows, talent competitions, thanksgiving ceremonies, and sports activities. It’s a community-centered celebration that brings Valencia to life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="government" class="py-5">
+        <div class="container">
+            <h2>Valencia Government Officials</h2>
+
+            <div class="row g-4 mt-3">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card official-card text-center">
+                        <img src="images/officials/teves.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="teves" style="width:120px; height:120px; object-fit:cover; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#officialModalTeves">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Edgar "Junjun" Teves Jr.</h5>
+                            <small class="text-muted">Mayor</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="card official-card text-center">
+                        <img src="images/officials/juna.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="juna" style="width:120px; height:120px; object-fit:cover; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#officialModalJuna">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Juna May T. Teves</h5>
+                            <small class="text-muted">Vice Mayor</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="card official-card text-center">
+                        <img src="images/officials/salvoro.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="salvoro" style="width:120px; height:120px; object-fit:cover; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#officialModalSalvoro">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Salvoro, Romeo T.</h5>
+                            <small class="text-muted">Council Member</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Reach out to us for inquiries, reservations, or more information about Valencia’s attractions and events.</p>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="developers" class="py-5">
+        <div class="container">
+            <h2>The Developers</h2>
+            <p class="text-muted">Placeholder: credits for the site developers. Click a developer to see details.</p>
+
+            <div class="row g-4 mt-4">
+                <div class="col-12">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card dev-card d-flex flex-column align-items-center gap-3 p-3 text-center" role="button" data-bs-toggle="modal" data-bs-target="#devModal1">
+                                <img src="images/developers/eljohn.jpg" alt="Jakosalem" class="dev-img">
+                                <h5 class="mb-0">Eljohn Jakosalem</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="card dev-card d-flex flex-column align-items-center gap-3 p-3 text-center" role="button" data-bs-toggle="modal" data-bs-target="#devModal2">
+                                <img src="images/developers/rhonevie.jpg" alt="Frejoles" class="dev-img">
+                                <h5 class="mb-0">Rhonevie Frejoles</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="card dev-card d-flex flex-column align-items-center gap-3 p-3 text-center" role="button" data-bs-toggle="modal" data-bs-target="#devModal3">
+                                <img src="images/developers/davin.png" alt="davin" class="dev-img">
+                                <h5 class="mb-0">Archer Davin</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-md-5">
+                            <div class="card dev-card d-flex flex-column align-items-center gap-3 p-3 text-center" role="button" data-bs-toggle="modal" data-bs-target="#devModal4">
+                                <img src="images/developers/emman.png" alt="emman" class="dev-img">
+                                <h5 class="mb-0">Charles Emman Ferrater</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+                            <div class="card dev-card d-flex flex-column align-items-center gap-3 p-3 text-center" role="button" data-bs-toggle="modal" data-bs-target="#devModal5">
+                                <img src="images/developers/lado.jpg" alt="lado" class="dev-img">
+                                <h5 class="mb-0">Clayton Art Lado</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer detail modals -->
+    <div class="modals-container">
+        <div class="modal fade" id="devModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Eljohn Jakosalem - BSIT</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex gap-3 align-items-start">
+                        <img src="images/developers/eljohn.jpg" alt="Eljohn" style="width:160px; height:160px; object-fit:cover; border-radius:12px;">
+                        <div>
+                            <p>“Code your dreams, build your future.”</p>
+                            <p class="mb-0"><strong>Contact:</strong> etjakosalem.student@asiancollege.edu.ph</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="devModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Rhonevie Frejoles - BSIT</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex gap-3 align-items-start">
+                        <img src="images/developers/rhonevie.jpg" alt="Rhonevie" style="width:160px; height:160px; object-fit:cover; border-radius:12px;">
+                        <div>
+                            <p>“Turning ideas into reality, one line at a time.”</p>
+                            <p class="mb-0"><strong>Contact:</strong> rlfrejoles.student@asiancollege.edu.ph</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="devModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Archer Davin - BSIT</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex gap-3 align-items-start">
+                        <img src="images/developers/davin.png" alt="davin" style="width:160px; height:160px; object-fit:cover; border-radius:12px;">
+                        <div>
+                            <p>"Seize the Day"</p>
+                            <p class="mb-0"><strong>Contact:</strong> carla@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="devModal4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Charles Emman Ferrater — BSIT</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex gap-3 align-items-start">
+                        <img src="images/developers/emman.png" alt="emman" style="width:160px; height:160px; object-fit:cover; border-radius:12px;">
+                        <div>
+                            <p>"Chase progress, not perfection."</p>
+                            <p class="mb-0"><strong>Contact:</strong> daniel@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="devModal5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Clayton Art Lado — BSIT</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex gap-3 align-items-start">
+                        <img src="images/developers/lado.jpg" alt="lado" style="width:160px; height:160px; object-fit:cover; border-radius:12px;">
+                        <div>
+                            <p>"Yes Sir!"</p>
+                            <p class="mb-0"><strong>Contact:</strong> eve@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- modals for government officials -->
+<div class="official-modals">
+    <div class="modal fade" id="officialModalTeves" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edgar "Junjun" Teves Jr. — Mayor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/officials/teves.png" alt="teves" class="img-fluid" style="max-height:70vh; object-fit:cover; border-radius:8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="officialModalJuna" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Juna May T. Teves — Vice Mayor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/officials/juna.png" alt="juna" class="img-fluid" style="max-height:70vh; object-fit:cover; border-radius:8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="officialModalSalvoro" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Salvoro, Romeo T. — Council Member</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/officials/salvoro.jpg" alt="salvoro" class="img-fluid" style="max-height:70vh; object-fit:cover; border-radius:8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- navbar -->
+    <nav id="side-nav" aria-label="Section navigation">
+        <div class="d-flex flex-column align-items-center">
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#" aria-label="Home" title="Home">Home</a>
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#about" aria-label="About" title="About">About</a>
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#attractions" aria-label="Attractions" title="Attractions">Attractions</a>
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#food" aria-label="Food" title="Food">Food</a>
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#events" aria-label="Events" title="Events">Events</a>
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#government" aria-label="Government" title="Government">Govt</a>
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#contact" aria-label="Contact" title="Contact">Contact</a>
+            <a class="btn btn-outline-primary btn-sm side-nav-btn" href="#developers" aria-label="Developers" title="Developers">Devs</a>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+

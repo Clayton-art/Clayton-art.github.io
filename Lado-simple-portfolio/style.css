@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  color: #083b4c;
+}
+
+.container {
+  width: 1100px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.top-bar {
+  background: #eef5f7;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.navbar {
+  background: #eef5f7;
+  padding: 20px 0;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #083b4c;
+  font-weight: 500;
+}
+
+.btn {
+  background: #2cc56f;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.hero {
+  background: #eef5f7;
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.services {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.cta {
+  margin-top: 60px;
+}
+
+.about {
+  padding: 80px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.clients {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.client-card {
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.client-card img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  padding: 80px 0;
+}
+
+.contact-box {
+  background: #083b4c;
+  color: white;
+  padding: 50px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact-form button {
+  background: #2cc56f;
+  border: none;
+  color: white;
+  padding: 14px;
+  border-radius: 30px;
+}
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.cta {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.cta h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta .btn {
+  padding: 14px 32px;
+}
+
+

@@ -1,142 +1,800 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accounting Firm</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Services - Secure Your Future</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            color: #083344;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #eaf3f5;
+            padding: 12px 0;
+            font-size: 14px;
+            border-bottom: 3px solid #22c55e;
+        }
+
+        .top-bar a {
+            color: #083344;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        .top-bar a:hover {
+            color: #22c55e;
+        }
+
+        .top-bar .left-links a {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .top-bar i {
+            margin-right: 5px;
+        }
+
+        .top-bar .social-icon {
+            margin: 0 5px;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #eaf3f5;
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #083344;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: #083344;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover {
+            color: #22c55e;
+        }
+
+        .nav-link.active {
+            border-bottom: 2px solid #22c55e;
+            color: #083344;
+        }
+
+        .dropdown-toggle::after {
+            margin-left: 5px;
+        }
+
+        .btn-green {
+            background: #22c55e;
+            color: #fff;
+            border-radius: 30px;
+            padding: 10px 28px;
+            border: none;
+            font-weight: 600;
+        }
+
+        .btn-green:hover {
+            background: #16a34a;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #eaf3f5;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #083344;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #475569;
+            font-size: 18px;
+            max-width: 480px;
+            margin-bottom: 30px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Solutions Section */
+        .solutions-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #083344;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title span {
+            color: #22c55e;
+        }
+
+        .service-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 40px 30px;
+            height: 100%;
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 36px;
+            color: #22c55e;
+            margin-bottom: 20px;
+        }
+
+        .service-card h5 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #083344;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: #f8fafc;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #083344;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 16px;
+        }
+
+        /* Empowering Section */
+        .empowering-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .empowering-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #083344;
+            margin-bottom: 25px;
+        }
+
+        .empowering-section p {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .empowering-section img {
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list li {
+            padding: 12px 0;
+            color: #083344;
+            font-weight: 500;
+        }
+
+        .feature-list li i {
+            color: #22c55e;
+            margin-right: 12px;
+            font-size: 18px;
+        }
+
+        /* Clients Section */
+        .clients-section {
+            padding: 80px 0;
+            background-color: #f8fafc;
+        }
+
+        .clients-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #083344;
+            text-align: center;
+            margin-bottom: 60px;
+            line-height: 1.4;
+        }
+
+        .client-card {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .client-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .client-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #083344;
+            margin-bottom: 30px;
+        }
+
+        .client-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+        }
+
+        .client-card .quote {
+            color: #64748b;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        .client-info {
+            font-weight: 600;
+            color: #083344;
+            margin-bottom: 5px;
+        }
+
+        .client-role {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Logo Section */
+        .logo-section {
+            padding: 50px 0;
+            background-color: white;
+            border-top: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .logo-item {
+            font-weight: 600;
+            color: #475569;
+            font-size: 16px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .logo-item:hover {
+            opacity: 1;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background-color: #f8fafc;
+        }
+
+        .contact-box {
+            background-color: #083344;
+            border-radius: 20px;
+            padding: 60px;
+            color: white;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            margin-bottom: 35px;
+        }
+
+        .contact-item i {
+            color: #22c55e;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .contact-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-item p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 15px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .contact-form .form-control,
+        .contact-form .form-select {
+            border: 1px solid #e5e7eb;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            color: #083344;
+        }
+
+        .contact-form .form-control::placeholder {
+            color: #94a3b8;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form label {
+            font-weight: 500;
+            color: #475569;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: white;
+            padding: 60px 0 30px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .footer-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer-links h5 {
+            font-weight: 600;
+            color: #083344;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links ul li a {
+            color: #64748b;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links ul li a:hover {
+            color: #22c55e;
+        }
+
+        .footer-contact p {
+            color: #64748b;
+            margin-bottom: 10px;
+        }
+
+        .footer-contact i {
+            color: #22c55e;
+            margin-right: 8px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #083344;
+            margin-right: 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #22c55e;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            color: #64748b;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-to-top:hover {
+            color: #22c55e;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .contact-box {
+                padding: 40px 30px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-
-<div class="top-bar">
-  <div class="container">
-    <div class="left">OFFICES &nbsp; CAREERS &nbsp; FAQS</div>
-    <div class="right">
-      (555) 802-1234 &nbsp; Email Us
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 left-links">
+                    <a href="#offices">OFFICES</a>
+                    <a href="#careers">CAREERS</a>
+                    <a href="#faqs">FAQS</a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="tel:5558021234"><i class="fas fa-phone"></i> (555) 802-1234</a>
+                    <a href="mailto:info@company.com"><i class="fas fa-envelope"></i> Email Us</a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-
-<header class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">Company</div>
-    <nav>
-      <a class="active">Home</a>
-      <a>Services</a>
-      <a>Industries</a>
-      <a>Resources</a>
-      <a>About Us</a>
-      <a>News</a>
-    </nav>
-    <a class="btn">Free Consultation</a>
+   <body>
+<nav class="navbar navbar-expand-lg py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Acountant</a>
+    <ul class="navbar-nav mx-auto gap-4">
+      <li class="nav-item"><a class="nav-link active">Home</a></li>
+      <li class="nav-item"><a class="nav-link">Services</a></li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link">Resources</a></li>
+      <li class="nav-item"><a class="nav-link">About Us</a></li>
+      <li class="nav-item"><a class="nav-link">News</a></li>
+    </ul>
+    <a class="btn btn-green">Free Consultation</a>
   </div>
-</header>
+</nav>
 
 <section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>Secure your financial<br>future with.</h1>
-      <p>Curabitur ac leo nunc vestibulum finibus maximus neleo consectetur.</p>
-      <a class="btn">Free Consultation</a>
-    </div>
-    <img src="images/hero-woman.jpg" alt="Hero">
-  </div>
-</section>
-
-
-<section class="services">
-  <h2>Solutions for every<br>business need.</h2>
-  <div class="container service-grid">
-    <div class="card">
-      <h4>Accounting</h4>
-      <p>Curabitur ac leo nunc estibul et mauris vel ante.</p>
-    </div>
-    <div class="card">
-      <h4>Tax Management</h4>
-      <p>Curabitur ac leo nunc estibul et mauris vel ante.</p>
-    </div>
-    <div class="card">
-      <h4>Financial Planning</h4>
-      <p>Curabitur ac leo nunc estibul et mauris vel ante.</p>
-    </div>
-  </div>
-
-  <div class="cta">
-    <h3>Need a personalized solution?</h3>
-    <p>Curabitur ac leo nunc estibul et mauris vel ante.</p>
-    <a class="btn">How we can help?</a>
-  </div>
-</section>
-
-
-<section class="about">
-  <div class="container about-grid">
-    <img src="images/team-work.jpeg">
-    <div>
-      <h2>Empowering you to<br>make sound financial decisions.</h2>
-      <ul>
-        <li>Financial assessment reports</li>
-        <li>Income tax planning and consulting</li>
-        <li>Payroll and sales taxes</li>
-      </ul>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1>Secure your financial future with.</h1>
+        <p class="mt-3">
+          Curabitur ac leo nunc vestibulum finibus maximus
+          neleo consecte.
+        </p>
+        <a class="btn btn-green mt-4">Free Consultation</a>
+      </div>
+      <div class="col-lg-6 text-end">
+        <img src="images/hero-woman.jpg" class="img-fluid">
+      </div>
     </div>
   </div>
 </section>
 
+    <section class="solutions-section">
+        <div class="container">
+            <h2 class="section-title">Solutions for every<br>business need<span>.</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h5>Accounting</h5>
+                        <p>Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo, integer consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h5>Tax Management</h5>
+                        <p>Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo, integer consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5>Financial Planning</h5>
+                        <p>Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo, integer consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="clients">
-  <h2>No matter who you are,<br>we’ve got what you need.</h2>
-  <div class="container client-grid">
-    <div class="client-card">
-      <img src="images/avatar-1.webp">
-      <h4>Private Clients</h4>
-      <p>Curabitur ac leo nunc estibul et mauris vel ante.</p>
-    </div>
-    <div class="client-card">
-      <img src="images/avatar-2.webp">
-      <h4>Entrepreneurs</h4>
-      <p>Curabitur ac leo nunc estibul et mauris vel ante.</p>
-    </div>
-    <div class="client-card">
-      <img src="images/avatar-3.png">
-      <h4>Professional Firms</h4>
-      <p>Curabitur ac leo nunc estibul et mauris vel ante.</p>
-    </div>
-  </div>
-</section>
+    <section class="cta-section">
+        <div class="container text-center">
+            <h3>Need a personalized solution<span style="color: #22c55e">?</span></h3>
+            <p>Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus.</p>
+            <button class="btn btn-green px-5">How we can help?</button>
+        </div>
+    </section>
 
+    <section class="empowering-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/team-work.jpeg" alt="Team meeting" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Empowering you to make sound financial decisions.</h2>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Financial assessment reports</li>
+                        <li><i class="fas fa-check-circle"></i> Income tax planning and consulting</li>
+                        <li><i class="fas fa-check-circle"></i> Payroll and sales taxes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="contact">
-  <div class="container contact-box">
-    <div class="contact-info">
-      <h2>Get a personal consultation.</h2>
-      <p><strong>Office</strong><br>Avada Accountant 1234 Avada Avenue</p>
-      <p><strong>Contact</strong><br>info@company.com</p>
-      <p><strong>Open Hours</strong><br>Mon – Sat: 8am – 6pm</p>
-    </div>
+    <section class="clients-section">
+        <div class="container">
+            <h2>No matter who you are,<br>we've got what you need.</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="client-card">
+                        <h3>Private Clients</h3>
+                        <div class="client-avatar">
+                            <img src="images/avatar-1.webp"  style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <p class="quote">"Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo. Integer consectetur"</p>
+                        <div class="client-info">Jonathan Joestar</div>
+                        <div class="client-role">Itemstefros Founder</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="client-card">
+                        <h3>Entrepreneurs</h3>
+                        <div class="client-avatar">
+                            <img src="images/avatar-2.webp" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <p class="quote">"Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo. Integer consectetur"</p>
+                        <div class="client-info">Joseph Joestar</div>
+                        <div class="client-role">Abstract's Founder</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="client-card">
+                        <h3>Professional Firms</h3>
+                        <div class="client-avatar">
+                            <img src="images/avatar-3.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <p class="quote">"Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo. Integer consectetur"</p>
+                        <div class="client-info">Giorno Giovanna</div>
+                        <div class="client-role">Spaces's Founder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <form class="contact-form">
-      <input placeholder="Name">
-      <input placeholder="Phone">
-      <input placeholder="Email">
-      <select><option>Accounting</option></select>
-      <input placeholder="Subject">
-      <textarea placeholder="How can we help?"></textarea>
-      <button>Request a Quote</button>
-    </form>
-  </div>
-</section>
+    <section class="logo-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-6 col-md-2 mb-3">
+                    <div class="logo-item">abstract</div>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <div class="logo-item">CGLOBAL</div>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <div class="logo-item">digitalbox</div>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <div class="logo-item">HEMISFERIO</div>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <div class="logo-item">next ❄</div>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <div class="logo-item">[spaces]</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="row">
+                    <div class="col-lg-5 contact-info mb-4 mb-lg-0">
+                        <h2>Get a personal consultation</h2>
+                        
+                        <div class="contact-item">
+                            <h4><i class="fas fa-map-marker-alt"></i> Office</h4>
+                            <p>Avada Accountant 1234 Avada Avenue,<br>Avadaville, 11221</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h4><i class="fas fa-envelope"></i> Contact</h4>
+                            <p>info@company.com<br>support@company.com</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h4><i class="fas fa-clock"></i> Open Hours</h4>
+                            <p>Monday – Saturday: 8am – 6pm<br>Sunday: 11am – 4pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-7">
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Name *</label>
+                                    <input type="text" class="form-control" placeholder="Jotaro Kujo*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Phone *</label>
+                                    <input type="tel" class="form-control" placeholder="(123)-456-7890*" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Email address *</label>
+                                    <input type="email" class="form-control" placeholder="asiancollege@company.com*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Service interested in *</label>
+                                    <select class="form-select">
+                                        <option>Accounting</option>
+                                        <option>Tax Management</option>
+                                        <option>Financial Planning</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label>Subject</label>
+                            <input type="text" class="form-control" placeholder="Personal Tax Planning">
+                            <label>How can we help?</label>
+                            <textarea class="form-control" placeholder="I need help with the next problem"></textarea>
+                            <button type="submit" class="btn btn-green w-100">Request a Quote</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <p>© Company</p>
-    <p>(555) 802-1234</p>
-  </div>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <p class="footer-description">Curabitur ac leo nunc estibul et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus dui id.</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Overview</h5>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#industries">Industries</a></li>
+                            <li><a href="#about">Who we are</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#news">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Business Info</h5>
+                        <ul>
+                            <li><a href="#offices">Offices</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#faqs">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Business Info</h5>
+                        <div class="footer-contact">
+                            <p>Avada Accountant 1234 Avada Avenue,<br>Avadaville, 11221</p>
+                            <p><i class="fas fa-phone"></i> (555) 802-1234</p>
+                            <p><i class="fas fa-envelope"></i> info@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                            Back to top <i class="fas fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

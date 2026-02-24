@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #deleteBtn {
+            background-color: #f44336;
+        }
+
+        #deleteBtn:hover {
+            background-color: #da190b;
+        }
+
+        #cloneBtn {
+            background-color: #008CBA;
+        }
+
+        #cloneBtn:hover {
+            background-color: #007399;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Random List</h1>
+    <ul id="myList"></ul>
+    <div>
+        <button id="addBtn">Add Random Item</button>
+        <button id="deleteBtn">Delete Last Item</button>
+        <button id="cloneBtn">Clone Last Item</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

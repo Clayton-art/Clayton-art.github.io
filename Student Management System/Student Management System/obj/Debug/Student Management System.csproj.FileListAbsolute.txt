@@ -1,0 +1,12 @@
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student Management System.csproj.AssemblyReference.cache
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student_Management_System.frmLogin.resources
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student_Management_System.frmMainStudent.resources
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student_Management_System.frmAddStudent.resources
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student_Management_System.Properties.Resources.resources
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student Management System.csproj.GenerateResource.cache
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student Management System.csproj.CoreCompileInputs.cache
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\bin\Debug\Student Management System.exe.config
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\bin\Debug\Student Management System.exe
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\bin\Debug\Student Management System.pdb
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student Management System.exe
+C:\Users\Clayt\source\repos\Student Management System\Student Management System\obj\Debug\Student Management System.pdb

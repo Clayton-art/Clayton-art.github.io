@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eef1f7;
+}
+
+/* LOGIN */
+.login-box {
+  width: 300px;
+  margin: 120px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.login-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  background: #eef1f7;
+  overflow-y: auto;
+}
+
+/* HEADER */
+header {
+  background: #1e293b;
+  color: white;
+  padding: 15px;
+}
+
+/* CONTAINER */
+.container {
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+input, select {
+  padding: 10px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-success {
+  background: #16a34a;
+  color: white;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-secondary {
+  background: #334155;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #1f2937;
+}
+
+/* SIDEBAR BUTTON LAYOUT */
+.sidebar button {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+/* LOGOUT BOTTOM */
+.logout-btn-side {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.stat-card {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* SLOT GRID */
+#slotGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.slot {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+}
+
+.available { background: green; }
+.occupied { background: red; }

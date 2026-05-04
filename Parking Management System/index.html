@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parking Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginPage" class="login-box">
+  <h2>Admin Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button class="btn btn-primary" onclick="login()">Login</button>
+  <p id="error"></p>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+
+    <button class="btn btn-secondary" onclick="openTab('main')">Dashboard</button>
+    <button class="btn btn-secondary" onclick="openTab('slots')">Parking Slots</button>
+
+    <div style="flex:1"></div>
+
+    <button class="btn btn-danger logout-btn-side" onclick="logout()">
+      Logout
+    </button>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <header>
+      AC Parking Management
+    </header>
+
+    <!-- MAIN -->
+    <div id="main" class="tab-content">
+      <div class="container">
+
+        <!-- FORM -->
+        <div class="card">
+          <h3>Add Vehicle Entry</h3>
+
+          <div class="form-grid">
+
+            <input type="text" id="plate" placeholder="Vehicle Plate"
+                   oninput="this.value=this.value.toUpperCase()">
+
+            <select id="type">
+              <option value="">Vehicle Type</option>
+              <option>Car</option>
+              <option>Motorcycle</option>
+              <option>Truck</option>
+              <option>Van</option>
+              <option>Bus</option>
+            </select>
+
+            <input type="text" id="owner" placeholder="Owner Name">
+            <input type="number" id="rate" placeholder="Rate/hr">
+
+            <select id="slotSelect">
+              <option value="">Select Slot</option>
+            </select>
+
+            <select id="paymentMethod">
+              <option value="">Payment Method</option>
+              <option>Cash</option>
+              <option>Card</option>
+              <option>E-Wallet</option>
+            </select>
+
+            <button class="btn btn-primary" onclick="addEntry()">Add Entry</button>
+
+          </div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="card search-bar">
+          <input type="text" id="searchInput" placeholder="Search..." onkeyup="renderTable()">
+
+          <select id="filterStatus" onchange="renderTable()">
+            <option value="">All Status</option>
+            <option value="Paid">Paid</option>
+            <option value="Pending">Pending</option>
+          </select>
+        </div>
+
+        <!-- STATS -->
+        <div class="stats">
+          <div class="stat-card"><h4>Total Revenue</h4><p id="totalRevenue">0</p></div>
+          <div class="stat-card"><h4>Total Vehicles</h4><p id="totalVehicles">0</p></div>
+          <div class="stat-card"><h4>Active</h4><p id="activeVehicles">0</p></div>
+          <div class="stat-card"><h4>Completed</h4><p id="completedVehicles">0</p></div>
+        </div>
+
+        <!-- TABLE -->
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Plate</th>
+                <th>Type</th>
+                <th>Owner</th>
+                <th>Slot</th>
+                <th>Entry</th>
+                <th>Exit</th>
+                <th>Fee</th>
+                <th>Status</th>
+                <th>Method</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SLOTS -->
+    <div id="slots" class="tab-content" style="display:none;">
+      <div class="container">
+        <h3>Parking Slots</h3>
+        <div id="slotGrid"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
